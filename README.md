@@ -1,12 +1,12 @@
 # assessment
-composer install
-bin/console doctrine:schema:create
+- composer install
+- bin/console doctrine:schema:create
 
 #Request examples
 
-Create User
+#Create User
 
-POST /api/user HTTP/1.1
+- POST /api/user HTTP/1.1
 Content-Type: application/json
 User-Agent: PostmanRuntime/7.20.1
 Accept: */*
@@ -42,7 +42,7 @@ X-Robots-Tag: noindex
 
 Get Users
 
-GET /api/user HTTP/1.1
+- GET /api/user HTTP/1.1
 Content-Type: application/json
 User-Agent: PostmanRuntime/7.20.1
 Accept: */*
@@ -114,9 +114,9 @@ X-Robots-Tag: noindex
 }
 ]
 
-Get user
+#Get user
 
-GET /api/user/2 HTTP/1.1
+- GET /api/user/2 HTTP/1.1
 Content-Type: application/json
 User-Agent: PostmanRuntime/7.20.1
 Accept: */*
@@ -148,8 +148,9 @@ X-Robots-Tag: noindex
 }
 }
 
-Delete user
-DELETE /api/user/2 HTTP/1.1
+#Delete user
+
+- DELETE /api/user/2 HTTP/1.1
 Content-Type: application/json
 User-Agent: PostmanRuntime/7.20.1
 Accept: */*
